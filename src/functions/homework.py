@@ -1,6 +1,15 @@
 # Моя домашка
 import sys
 
+def kilometers_to_centimeters(i) -> int:
+    return 1000 * i
+
+def strip_rows(rows: list) -> list:
+    ret_li = []
+    for st in rows:
+        ret_li.append(st.strip())
+    return ret_li
+
 
 if __name__ == "__main__":
     this_mod = sys.modules[__name__]
